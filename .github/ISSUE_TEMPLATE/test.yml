@@ -1,0 +1,64 @@
+name: Test
+description: A test to be designed or run (manual or automated)
+title: ""
+labels: ["test"]
+projects: ["SUNDKdk/18"]
+body:
+  - type: dropdown
+    id: test-kind
+    attributes:
+      label: Kind
+      description: Is this a manual test to be performed or automated test to be designed/created?
+      options:
+        - Manual
+        - Automated
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of what's being tested and why
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope / test cases
+      description: What should be covered? List specific cases or scenarios.
+      placeholder: |
+        - 
+        - 
+        - 
+    validations:
+      required: false
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to run
+      description: How to execute this test (for existing tests) or how it should be executed once designed
+      placeholder: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: false
+
+  - type: textarea
+    id: files
+    attributes:
+      label: Files
+      description: If applicable, attach test scripts, logs, or other relevant files
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Any other context or notes
+    validations:
+      required: false

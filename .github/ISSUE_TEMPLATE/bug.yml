@@ -1,0 +1,49 @@
+name: Bug report
+description: Report a bug in the codebase
+title: "[BUG] "
+labels: ["bug"]
+projects: ["SUNDKdk/18"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of what the bug is
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the steps to trigger the bug
+      placeholder: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: false
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What currently happens when you follow the steps above
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened
+    validations:
+      required: false
+
+  - type: textarea
+    id: files
+    attributes:
+      label: Files
+      description: If applicable, attach screenshots, logs, or other files to help explain the problem
+    validations:
+      required: false
