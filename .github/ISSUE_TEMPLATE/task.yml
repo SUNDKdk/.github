@@ -1,4 +1,4 @@
-name: Task
+name: Task Issue
 description: A piece of work to be done.
 labels: ["task"]
 projects: ["SUNDKdk/18"]
@@ -7,7 +7,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: A clear and concise description of the task
+      description: A clear description of the task
     validations:
       required: true
 
@@ -16,13 +16,5 @@ body:
     attributes:
       label: Files
       description: If applicable, attach specs, designs, or other relevant files
-    validations:
-      required: false
-
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: Additional context
-      description: Any other context or notes
     validations:
       required: false

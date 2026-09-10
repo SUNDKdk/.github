@@ -1,4 +1,4 @@
-name: Test
+name: Test / QA Issue
 description: A test to be designed or run (manual or automated)
 labels: ["test"]
 projects: ["SUNDKdk/18"]
@@ -7,10 +7,12 @@ body:
     id: test-kind
     attributes:
       label: Kind
-      description: Is this a manual test to be performed or automated test to be designed/created?
+      description: Is this a manual test to be described/performed or an automated test to be designed/run?
       options:
         - Manual
         - Automated
+        - Both
+        - Other
     validations:
       required: true
 
@@ -26,23 +28,11 @@ body:
     id: scope
     attributes:
       label: Scope / test cases
-      description: What should be covered? List specific cases or scenarios.
+      description: What should be covered by the test? List specific cases or scenarios.
       placeholder: |
         - 
         - 
         - 
-    validations:
-      required: false
-
-  - type: textarea
-    id: steps
-    attributes:
-      label: Steps to run
-      description: How to execute this test (for existing tests) or how it should be executed once designed
-      placeholder: |
-        1. 
-        2. 
-        3. 
     validations:
       required: false
 
@@ -51,13 +41,5 @@ body:
     attributes:
       label: Files
       description: If applicable, attach test scripts, logs, or other relevant files
-    validations:
-      required: false
-
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: Additional context
-      description: Any other context or notes
     validations:
       required: false
