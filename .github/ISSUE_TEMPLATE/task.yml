@@ -1,6 +1,5 @@
 name: Task
 description: A piece of work to be done.
-title: " "
 labels: ["task"]
 projects: ["SUNDKdk/18"]
 body:

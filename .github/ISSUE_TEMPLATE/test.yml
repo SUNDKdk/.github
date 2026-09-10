@@ -1,6 +1,5 @@
 name: Test
 description: A test to be designed or run (manual or automated)
-title: " "
 labels: ["test"]
 projects: ["SUNDKdk/18"]
 body:
