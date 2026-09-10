@@ -1,6 +1,6 @@
 name: Task Issue
 description: A piece of work to be done.
-labels: ["task"]
+type: task
 projects: ["SUNDKdk/18"]
 body:
   - type: textarea

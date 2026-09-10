@@ -1,6 +1,6 @@
 name: Test / QA Issue
 description: A test to be designed or run (manual or automated)
-labels: ["test"]
+type: task
 projects: ["SUNDKdk/18"]
 body:
   - type: dropdown

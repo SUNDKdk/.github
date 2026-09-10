@@ -1,6 +1,6 @@
 name: Bug Report
 description: Report a bug in the codebase
-labels: ["bug"]
+type: bug
 projects: ["SUNDKdk/18"]
 body:
   - type: textarea
